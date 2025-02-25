@@ -1,4 +1,7 @@
 ### Hi there 👋
+💬 Ask me about Website and Softwares also am a internet service provider
+📫 You can click the links in my bio to reach me
+
 
 <!--
 **DANTECH-COMPUTERS/dantech-computers** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
