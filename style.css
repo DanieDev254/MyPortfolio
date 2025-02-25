@@ -75,6 +75,10 @@ section{
   margin-bottom: 100px;
 }
 
+#skills{
+  margin-bottom: 5px;
+}
+
 h1{
     margin-left: 20px;
     
@@ -240,6 +244,15 @@ i{
   color:white;
   padding: 2px;
   margin: 3px;
+}
+
+.git{
+  color: orangered;
+  font-size: 20px;
+}
+.git:hover{
+  color: white;
+
 }
 
 .footer{
