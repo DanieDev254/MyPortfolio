@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <!-- <button class="button" onclick="toggleSidebar()">☰</button> -->
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <!-- Home section -->
+     <main>
+    <section id="home">
+        <div class="image-text-container">
+            <img src="Portfolio.png" alt="Payment image" />          
+            <div class="text-content">
+              <h2>Welcome to my portfolio</h2>
+              <address>Name: <br>Daniel Muange Muthini<br/>Software Developer.</address>
+            </div>
+        </div>
+        <br>
+        <br>
+        </section>
+        <br>
+        <br>
+        <br>
+        <hr class="hr">
+    
+    <!--About Me Section-->
+    <section id="about-me">
+        <div class="about-me">
+            <h2>About Me</h2>
+            <br>
+            <p>I am proficient in HTML, CSS, JavaScript, PHP, Python, and MySQL. <br><br>I have also worked on frameworks like Bootstrap, Flask, jQuery, and AngularJS. I am a quick learner and can adapt to new technologies easily and a team player able to work well with others. <br><br>I am also a good communicator able to explain complex concepts in simple terms and passionate about web & Software development who is always looking for new challenges. I am confident that I can help you with your project and look forward to working with you.</p>
+            <p>Not only in coding am also a computer technician,
+                 graphic designer, computer networking, i also do cctv and wifi installation. 
+            </p>
+            <p>About my experience in development have been achieved through day to day projects from simple to complex ones. To have look on them go to skills page i have attached my github page where i post them.</p>
+    
+        </div>
+    </section>    
+    <br>
+    <br>
+    <hr class="hr">
+    <br>
+    <!--Contact Section-->
+    <section id="contact">      
+        <br>
+        <div class="contact-section">  
+            <form action="">
+                <br>
+                <label for="Email">Email: <input type="email" name="" id="" required></label><br>
+                <label for="Email">Phone: <input type="tel" name="" id="" required></label><br>
+                <label for="text-content">Message:</label><br>
+                <textarea class="text-area" name="" id="" placeholder="Enter your message here..."></textarea> <br> 
+                <button class="submit" type="submit">Submit</button>
+            </form>
+            <div class="text-content">
+                <h2>Contact Me</h2>
+                <Address>
+                    Email: Danielmuange300@gmail.com <br>
+                    <br>
+                    Phone: +254768541903 <br>
+                    <br>
+                    Address: Nairobi, Kenya
+                </Address>
+                <br>
+                <i class='bx-fw bx bxl-facebook-square bx-fade-up'></i>
+                <i class='bx-fw bx bxl-whatsapp-square bx-fade-up'></i>
+                <i class='bx bxl-github bx-fade-up' style='font-size: 20px;'  ></i>
+            </div>
+
+        </div>
+        <br>
+    </section>
+    
+    <hr class="hr">
+    <!--Skills Section-->
+    <section id="skills">
+        <div class="skills-section">
+            <h2>Skills</h2>
+            <br>
+            <p>Below are some of the skills that I have acquired over the years.</p>
+            <br>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript
+                    <ol style="list-style-type: square;">
+                        <li>AngularJS</li>
+                        <li>ReactJS</li>
+                        <li>VueJS</li>
+                    </ol>
+                </li>
+                <li>PHP</li>
+                <li>Python
+                    <ol style="list-style-type: square;">
+                        <li>Flask</li>
+                        <li>Django</li>
+                    </ol>
+                </li>
+                <li>MySQL</li>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+            </ul>
+            <br>
+            <p>For more projects and skills, visit my <a href="">GitHub</a> page.</p>
+        </div>
+    </section>
+    </main>
+    <script>
+        let date= new Date();
+        hours=date.getFullYear()
+        console.log(hours);
+    </script>
+    <footer>
+        <p class="footer">Copyright &copy; <span id="dateNow"></span> by &hearts; Daniel | All rights reserved</p>
+    </footer>
+    <script>
+        let a = new Date();
+        hours=a.getFullYear()
+        document.getElementById('dateNow').innerHTML=hours;
+    </script>
+</body>
+</html>
