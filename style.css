@@ -1,285 +1,188 @@
-body {
-    /* margin-top: 100px; */
-    background-image: url('orange\ and\ black.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: verdana;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 0 0 10px white;
-    margin: 0 3px;
-    padding: 0;
-}
-
-nav {
-    background-color: transparent;
-    color: orangered;
-    padding: 0;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-nav a{
-  text-decoration: none;
-  color: orangered;
-}
-nav ul {
-    text-align: center;
-    /* position: absolute; */
-    list-style-type: none;
-    /* top: 50px; */
-    /* left: 55%; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    box-sizing: border-box;
 }
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-    font-size: 18px;
-    cursor: pointer;
+body {
+    font-family: 'Poppins', sans-serif;
 }
-nav a:hover {
-    color: silver;
-    background: transparent;
-    padding: 3px;
+header {
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(250, 249, 249, 0.986);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 5px;
+}
+header h1 {
+    font-size: 1.8rem;
+    color: white;
+}
+nav {
+    display: flex;
+}
+nav a {
+    color:white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 19px;
+    transition: color 0.3s;
+}
+nav a:hover, nav a.active {
+    color: black;
+    border-bottom: 1px solid black;
+    padding: 5px 7px;
+}
+.nav-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.nav-btn svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+    transition: transform 0.3s;
+}
 
-} 
-header {    
-    background-color: transparent;
-    backdrop-filter: blur(50px);
-    color: orangered;
-    border-radius: 30px;
-    padding: 5px;
-    position: fixed; 
-    top: 0; /* Position it at the top */
-    margin-top: 0;
-    margin: 1px;
-    width: 100%; /* Make it span the full width of the page */
-    z-index: 1000; /* Ensure it is above other content */
-    
-    /* border-bottom: 1px solid white;
-    border-radius: 6px;
-   
-    margin-bottom: 5px; */
+.nav-btn.active svg.hamburger {
+    display: none;
+}
+.nav-btn.active svg.close {
+    display: block;
+}
+.nav-btn svg.close {
+    display: none;
 }
 main{
-  margin-top: 70px;
-  padding: 2rem;
+  margin-top: 60px;
+  padding: 1rem 0;
 }
 section{
-  scroll-margin-top: 150px;
+  border-radius: 10px;
+  scroll-margin-top: 100px;
   margin-bottom: 100px;
 }
-
-#skills{
-  margin-bottom: 5px;
+section .container p{
+  color: black;
+  /* font-size: 1.2rem; */
 }
 
-h1{
-    margin-left: 20px;
-    
-}
-h2{
-    color: white;
-    margin-left: 10px;
-
-}
-
-/* 1. The container uses Flexbox */
-.image-text-container {
-    display: flex;        /* Side by side by default */
-    align-items: center;
-    justify-content: space-between; 
-    flex-wrap: wrap;      /* Allows wrapping on small screens */
-    gap: 20px;            /* Spacing between items */
-    max-width: 1200px;    /* Example max container width */
-    margin: 0 auto;       /* Center the container horizontally */
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  /* 2. Responsive image sizing */
-  .image-text-container img {
-    margin-top: 70px;
+.container img {
     width: 100%;           
     max-width: 400px;      
     height: auto;         
-    border: 1px solid black;
-    box-shadow: 0 0 3px grey;
+    border: 1px solid #ccc;;
+    box-shadow: 0 0 5px grey;
     border-radius:1500px;    
-  }
-  
-  /* 3. Text container */
-  .text-content {
-    flex: 1;               /* Allows the text to grow/shrink as needed */
-    min-width: 200px;      /* Prevents it from becoming too narrow */
-    max-width: 600px;      /* Optional cap on text width */
-  }
-  
-  address{
-    color: white;
-    margin-left: 10px;
-  }
+}
 
-  .link{
-    text-decoration: none;
-    color: white;
-    margin-top: 5px;
-    font-weight: 500;
-  }
-
-  .link i{
-    font-size: 25px;
-    color: white;
-    font-weight: 500;
-    /* padding: 5px; */
-    margin-top: 5px;
-  }
-
-  .link i:hover{
-    color: green;
-  }
-
-  p{
-    color: white;
-    margin-right: 30px;
-    margin:10px;
-    padding: 10px;
-  }
-
-  .hr{
-    width: 50%;
-
-  }
-
-  .about-me{
+.about, .projects, .contact {
+    padding: 4rem 2rem;
     text-align: center;
-    font-family: Verdana;
-  }
-
- .contact-section{
-    display: flex;        
-    align-items: center;
-    justify-content: space-between; 
-    flex-wrap: wrap;      
-    gap: 20px;            
-    max-width: 1200px;    
-    margin: 0 auto;       
-    padding: 20px;
-    box-sizing: border-box;
- }
-
- .contact-section form{
-    background: transparent;
-    margin-top: 40px;
-    width: auto;
+    margin: 0 auto;
     color: white;
-    padding: 10px;
-    height: 400px;  
-    backdrop-filter: blur(10px);       
-    border: 1px solid black;
-    box-shadow: 0 0 9px grey;
-    border-radius: 10px;    
- } 
-
- label{
-  text-align: left;
-  margin-left: 10px;
-  font-size: 15px;
-  margin: 10px;
-  font-weight: bold;
-
- } 
-
- input{
-  font-size: 19px;
-  margin: 10px;
-  padding: 7px;
-  border-radius: 6px;
- }
-
- textarea{
-  flex: 1;               /* Allows the text to grow/shrink as needed */
-  min-width: 200px;      /* Prevents it from becoming too narrow */
-  max-width: 600px;      /* Optional cap on text width */
-  border-radius: 10px;
-  height: 100px;
+}
+ .contact-form button{
   padding: 10px;
-  font-size: 15px;
-  margin: 10px;
+  border-radius:40px;
  }
-
- .text-content{
-  flex: 1;               /* Allows the text to grow/shrink as needed */
-    min-width: 200px;      /* Prevents it from becoming too narrow */
-    max-width: 600px;   
+ .contact-form button:hover{
+  transform: scale(1.1);
  }
-
- .submit{
-  margin-top: 20px;
-  margin-left: 10px;
-  background-color: orangered;
-  color: white;
-  font-size: 15px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 7px;
-  cursor: pointer;
+ 
+ .projects .btn{
+  border-radius: 30px;
+  padding: 10px;
  }
-
- .skills-list{
-  color: white;
-  margin-left: 10px;
+ .projects .btn:hover{
+  background-color: #d4e4d4;
+  color: black;
+  transform: scale(1.1);
  }
-
- .skills-list li{
-  margin-top: 5px;
- }
-
-i{
-  color:white;
-  padding: 2px;
-  margin: 3px;
+.input-icon {
+    position: relative;
 }
 
-.git{
-  color: orangered;
-  font-size: 20px;
-}
-.git:hover{
-  color: white;
-
-}
-
-.footer{
-  font-style: italic;
-  text-align: center;
-  justify-content: space-between;
+.input-icon i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
 }
 
+.input-icon input {
+    padding-left: 40px !important;
+}
+.social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s;
+  margin: 0 5px;
+}
 
- /* 4. Media query: adjust layout on smaller screens */
- @media (max-width: 768px) {
-  .image-text-container {
-    flex-direction: column;  /* Stack items vertically */
-    align-items: flex-start; 
-  }
+.social-links a:hover {
+  background-color: rgba(44, 62, 221, 0.932);
+  transform: translateY(-3px);
+}
 
-  .image-text-container img {
-      margin-top: 0;
-    max-width: 80%;     /* Make the image a bit smaller relative to container */
-  }
+.whatsapp-btn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s;
+}
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #128C7E;
+}
 
-  .text-content {
-    max-width: 100%;    /* Allow text to fill the available width */
-  }
-  i{
-    color:orangered;
-    padding: 2px;
-    margin-left: 10px;
-  }
+/* Mobile View */
+@media (max-width: 768px) {
+    .nav-btn {
+        display: block;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #d4e4d4;
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    nav.active {
+        display: flex;
+    }
+    nav a {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
 }
